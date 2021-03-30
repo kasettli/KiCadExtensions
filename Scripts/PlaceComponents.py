@@ -1,4 +1,4 @@
-#execfile(r'C:\Users\Admin\Documents\KiCad\Scripts\PlaceComponents.py')
+#execfile(r'/Users/jonas/Projects/KiCadExtensions/Scripts/PlaceComponents.py')
 
 #By Alan Samet
 #
