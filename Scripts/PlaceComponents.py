@@ -30,6 +30,17 @@ def get_wildcard_component_names(pattern, all_names = None):
 def get_component(name):
     return [x for x in pcb.GetModules() if x.GetReference() == name][0]
 
+
+
+
+# By Jonas Roth 
+def get_selected():
+    return [x for x in pcb.GetModules() if x.IsSelected()][::-1]
+
+# By Jonas Roth 
+def get_selected_names():
+    return [x.GetReference() for x in pcb.GetModules() if x.IsSelected()][::-1]
+
 '''
 suppress_refresh parameter is for when this is called in a loop. 
 
